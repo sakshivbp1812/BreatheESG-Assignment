@@ -19,18 +19,17 @@ This project focuses on that workflow.
 # Live Links
 
 ## Frontend
-YOUR_FRONTEND_URL
+
 
 ## Backend API
-YOUR_BACKEND_URL
+
 
 ## GitHub Repository
-YOUR_GITHUB_REPOSITORY
-
----
+https://github.com/sakshivbp1812/BreatheESG-Assignment.git
 
 # Demo Credentials
 
+Password: Pass44
 |
 
 

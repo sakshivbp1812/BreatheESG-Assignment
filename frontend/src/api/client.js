@@ -1,8 +1,8 @@
 import axios from 'axios';
 
-export const RENDER_API_URL = 'https://breatheesg-khy4.onrender.com/api';
+export const RENDER_API_URL = '';
 
-/** Same-origin /api on Vercel (proxied to Render). Direct Render URL for local dev. */
+
 export const getApiBaseUrl = () => {
   if (!import.meta.env.PROD) {
     return import.meta.env.VITE_API_URL || 'http://localhost:8000/api';

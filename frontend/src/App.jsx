@@ -1,125 +1,3 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
-
-function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
-
-      <div className="ticks"></div>
-
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
-  )
-}
-
-export default App
 import React, { useState, useEffect, useCallback } from 'react';
 import api, {
   getStoredToken,
@@ -331,7 +209,7 @@ export default function App() {
 
   const handleAutofill = (role) => {
     setUsername(role);
-    setPassword('password123');
+    setPassword('pass44');
   };
 
   const formatApiError = (err, fallback) => {
@@ -503,11 +381,11 @@ export default function App() {
         
         <div className="w-full max-w-md glass rounded-2xl border border-slate-800 p-8 shadow-2xl relative z-10">
           <div className="flex flex-col items-center mb-8">
-            <span className="text-5xl mb-3">🌱</span>
+            
             <h1 className="text-2xl font-extrabold tracking-tight bg-gradient-to-r from-emerald-400 to-teal-200 bg-clip-text text-transparent">
-              BreatheESG Platform
+              BreatheESG
             </h1>
-            <p className="text-slate-400 text-sm mt-1">Multi-Tenant Ingestion & Auditing Engine</p>
+            <p className="text-slate-400 text-sm mt-1">Access your ESG auditing workspace</p>
           </div>
 
           <form onSubmit={handleLogin} className="space-y-4">
@@ -558,7 +436,7 @@ export default function App() {
 
           {/* Quick login autofills for review ease */}
           <div className="mt-8 pt-6 border-t border-slate-800">
-            <span className="block text-xs font-semibold text-slate-400 text-center mb-3">Autofill Mock Credentials</span>
+            <span className="block text-xs font-semibold text-slate-400 text-center mb-3">Quick Access</span>
             <div className="grid grid-cols-3 gap-2">
               <button
                 onClick={() => handleAutofill('admin')}
@@ -579,7 +457,7 @@ export default function App() {
                 Viewer
               </button>
             </div>
-            <span className="block text-[10px] text-slate-500 text-center mt-3">All accounts use password: <code className="text-slate-400">password123</code></span>
+            <span className="block text-[10px] text-slate-500 text-center mt-3">Default password: <code className="text-slate-400">pass44</code></span>
           </div>
         </div>
       </div>
@@ -1387,11 +1265,6 @@ export default function App() {
         )}
 
       </div>
-
-      {/* Footer */}
-      <footer className="py-6 border-t border-slate-900 text-center text-xs text-slate-500 mt-auto">
-        <p>© 2026 BreatheESG Carbon Ingestion Platform prototype. Designed for intern technical assessment.</p>
-      </footer>
     </div>
   );
 }
