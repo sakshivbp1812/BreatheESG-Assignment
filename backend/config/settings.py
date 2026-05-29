@@ -17,7 +17,8 @@ DEBUG = os.environ.get("DEBUG", "True") == "True"
 ALLOWED_HOSTS = ["*"]
 
 CSRF_TRUSTED_ORIGINS = [
-    "https://breatheesg-backend-voox.onrender.com"
+    "https://breathe-esg-ecru-pi.vercel.app/",
+    "https://breatheesg-backend-voox.onrender.com",
     
 ]
 
