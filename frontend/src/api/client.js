@@ -7,13 +7,8 @@ export const getApiBaseUrl = () => {
   if (!import.meta.env.PROD) {
     return import.meta.env.VITE_API_URL || 'http://localhost:8000/api';
   }
-  if (typeof window !== 'undefined') {
-    const host = window.location.hostname;
-    if (host.endsWith('.vercel.app') || host.includes('vercel.app')) {
-      return '/api';
-    }
-  }
-  return RENDER_API_URL;
+  // In production (Vercel), always use Render backend
+  return `${RENDER_API_URL}/api`;
 };
 
 const ORG_SLUG = 'breathe-esg';
