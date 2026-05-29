@@ -22,7 +22,7 @@ This project focuses on that workflow.
 
 
 ## Backend API
-
+https://breatheesg-backend-voox.onrender.com
 
 ## GitHub Repository
 https://github.com/sakshivbp1812/BreatheESG-Assignment.git
@@ -212,20 +212,6 @@ http://localhost:5173
 
 ---
 
-# API Endpoints
-
-| Method | Endpoint |
-|---|---|
-| POST | /api/auth/login/ |
-| GET | /api/dashboard/ |
-| POST | /api/uploads/ |
-| GET | /api/records/ |
-| GET | /api/audit-logs/ |
-
----
-
-
-
 # Design Priorities
 
 This project intentionally focused on:
@@ -242,15 +228,4 @@ instead of:
 - over-engineered architecture
 
 ---
-
-# Future Improvements
-
-Possible production-scale improvements:
-- asynchronous ingestion workers
-- OCR utility invoice extraction
-- live ERP integrations
-- configurable emission factor registries
-- workflow notifications
-- schema versioning
-
 

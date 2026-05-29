@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-export const RENDER_API_URL = '';
+export const RENDER_API_URL = 'https://breatheesg-backend-voox.onrender.com';
 
 
 export const getApiBaseUrl = () => {
